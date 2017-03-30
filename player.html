@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="player.css">
+</head>
+
+<body>
+    <div style="height: 300px;"></div>
+    <audio id="myAudio" preload="auto" src="">
+        你的浏览器不支持html5播放器
+    </audio>
+    <nav id='playerContainer' class='navbar navbar-fixed-bottom'></nav>
+</body>
+<script src="player.js"></script>
+<script type="text/javascript">
+var player = new Player({
+    container: 'playerContainer',
+    audio: 'myAudio'
+})
+</script>
+
+</html>
